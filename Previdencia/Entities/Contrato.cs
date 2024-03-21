@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Previdencia.Entities
 {
-    internal class Contrato
+    public class Contrato
     {
+        public int CodigoContrato { get; set; }
+        public DateTime DataInclusao { get; set; }
+        public Cliente CodigoCliente { get; set; }
+        public Fundo CodigoFundo { get; set; }
+        public Beneficio CodigoBeneficio { get; set; }
+        public char Status { get; set; }
     }
 }

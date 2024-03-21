@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Previdencia.Entities
 {
-    internal class Indices
+    public class Indices
     {
+        public Fundo CodigoFundo { get; set; }
+        public DateTime Data { get; set; }
+        public double Valor { get; set; }
     }
 }

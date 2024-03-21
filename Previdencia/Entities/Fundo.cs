@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Previdencia.Entities
 {
-    internal class Fundo
+    public class Fundo
     {
+        public int CodigoFundo { get; set; }
+        public string Nome { get; set; }
     }
 }
