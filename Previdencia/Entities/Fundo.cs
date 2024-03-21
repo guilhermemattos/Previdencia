@@ -8,7 +8,7 @@ namespace Previdencia.Entities
 {
     public class Fundo
     {
-        public int CodigoFundo { get; set; }
+        public string CodigoFundo { get; set; }
         public string Nome { get; set; }
     }
 }

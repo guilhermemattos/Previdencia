@@ -10,10 +10,13 @@ namespace Previdencia.Entities
     public class Certificado
     {
         public int CodigoCertificado { get; set; }
+        public DateTime DataInclusao { get; set; }
+        public char Status { get; set; }
+
+        #region Relacionamentos
         public Contrato CodigoContrato { get; set; }
         public Produto CodigoProduto { get; set; }
         public Cliente CodigoCliente { get; set; }
-        public DateTime DataInclusao { get; set; }
-        public char Status { get; set; }
+        #endregion
     }
 }

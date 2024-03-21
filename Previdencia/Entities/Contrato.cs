@@ -10,9 +10,12 @@ namespace Previdencia.Entities
     {
         public int CodigoContrato { get; set; }
         public DateTime DataInclusao { get; set; }
+        public char Status { get; set; }
+
+        #region Relacionamentos
         public Cliente CodigoCliente { get; set; }
         public Fundo CodigoFundo { get; set; }
         public Beneficio CodigoBeneficio { get; set; }
-        public char Status { get; set; }
+        #endregion
     }
 }

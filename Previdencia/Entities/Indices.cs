@@ -8,8 +8,12 @@ namespace Previdencia.Entities
 {
     public class Indices
     {
-        public Fundo CodigoFundo { get; set; }
+        
         public DateTime Data { get; set; }
         public double Valor { get; set; }
+
+        #region Relacionamentos
+        public Fundo CodigoFundo { get; set; }
+        #endregion
     }
 }
